@@ -103,3 +103,30 @@ public class LaporanKebakaranHutan extends LaporanKebakaran {
   <img width="479" height="67" alt="image" src="https://github.com/user-attachments/assets/3f1af13f-7592-4093-af56-7b5c8eb13139" />
 
 Pada constructor subclass, digunakan instruksi super(lokasi) untuk memanggil constructor dari kelas induk (LaporanKebakaran) agar variabel lokasi diinisialisasi oleh superclass sebelum variabel spesifik milik subclass diproses.
+
+* **Polymorphism**
+  * Overloading
+    <img width="380" height="39" alt="image" src="https://github.com/user-attachments/assets/94446b9c-cd34-4d7b-983d-dc05c13d574a" />
+
+  Menerapkan dua method dengan nama sama (tampilkanDetail) pada kelas induk LaporanKebakaran, tetapi memiliki jumlah parameter yang berbeda.
+
+  * Overriding
+    <img width="464" height="76" alt="image" src="https://github.com/user-attachments/assets/12b7c5cd-5ca5-4ade-8553-d3bfccde6fe2" />
+
+Menimpa method tampilkanDetail() milik kelas induk di dalam kelas turunan (LaporanKebakaranHutan dan LaporanKebakaranLahan) untuk menampilkan informasi spesifik sesuai jenis laporkannya.
+
+* **Looping**
+  <img width="452" height="139" alt="image" src="https://github.com/user-attachments/assets/c2987541-d4d8-4ec1-96ce-c72cb4a2ecc6" />
+
+  Perulangan do-while digunakan pada Main.java untuk menjaga menu utama tetap berjalan secara interaktif sampai pengguna       memilih menu 5 (Keluar).
+
+* **Penerapan Condition**
+  <img width="455" height="41" alt="image" src="https://github.com/user-attachments/assets/74c746ac-54e7-4b1a-9318-69a4ee96f1ee" />
+
+Percabangan if-else digunakan untuk mengatur logika program, antara lain:
+
+1. Menentukan jenis instansiasi objek (subclass Hutan atau Lahan) berdasarkan pilihan input pengguna saat penambahan data.
+
+2. Pengecekan downcasting menggunakan instanceof untuk menyesuaikan pembaruan data berdasarkan tipe spesifik objek laporan.
+
+
